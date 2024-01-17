@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <script src="https://kit.fontawesome.com/e2374f689a.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!--get rid from here-->
+                <div class="header-two-text">
+                    <h1><span>D</span>'Angelo.</h1>
+                </div>
+                <!--to here-->
+                <!--<img src="images/logo.png" class="logo">  this is original -->
+                <ul id="sidemenu"> 
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>D'Angelo</span></br>Vera From United States</h1>
+            </div>
+        </div>
+    </div>
+<!------------about--------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+               <div class="about-col-1">
+                    <img src="images/user.png"> 
+               </div>
+               <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm a sophomore at Rutgers University Studying Finance & Computer Science. I'm currently on a journey to pave my path into the professional world</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Equity Research</span><br>Created a 48 page equity research paper along with a team to evaluate Southwest Airlines Co. (LUV). This project was part of the esteemed Road to Wall Street Program.</li>
+                            <li><span>Valuation</span><br>I have an understanding of fundamental concepts and tools for valuation of assets and financial products. Can build a modern portfolio using portfolio theory and investments along with my knowledge in diversification and risk preferences. Additionally, I know how to rank investment projects using capital budgeting techniques and have a strong understanding of Excel and Fincicial Calculator to analyze and evaluate investment and corporate choices.</li>
+                            <li><span>Robotics & Programming</span><br>Built an autonomous RC car using Raspberry Pi and Deep Learning</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Credit Suisse Case Competition</span><br>Collaborated with a partner to evaulate Ross Stores utilizing historical performance data, competitive analysis, sensitivity analysis, SWOT analysis, and discounted cash flow (DCF). Placed Top 16 Competed for Top 4 last remaining team from Rutgers.</li>
+                            <li><span>Deloitte x DSP x RCG Case Competition</span><br>Utilized mobile website technology to launch the platform enabling global access at a lower cost than mobile apps and developed a phased ERP approach to minimize issue-fixing costs and tailor strategy based on impact metrics</li>
+                            <!--<li><span>2016 - 2017</span><br>Intership at ekart eCommerce.</li>-->
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-2026</span><br>Finance & Computer Science at Rutgers University</li>
+                        </ul>
+                    </div>
+               </div>
+            </div>
+        </div>
+    </div>
+    <!--services-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Currently Unavailable</h2>
+                    <p></p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>Currently Unavailable</h2>
+                    <p></p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>Currently Unavailable</h2>
+                    <p></p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--portfolio-->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Autonomous RC car</h3>
+                    <p>description</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Western Digital Corp. - Qualitative Analysis Report</h3>
+                    <p>description</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Southwest Airlines Co. - LUV Equity Research Report</h3>
+                    <p>description</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!--contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>dangelov1103@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>‪(857) 246-8069‬</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/dangelovera/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © D'Angelo. Made with <i class="fas fa-heart"></i> by Easy Tutorials</p>
+    </div>
+</div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </Script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby7PTF1ed_cC3hfTA0kKYssSCQracX8S3LlvUV8LfbVlIzs4iMgT3ElFEAo4SF400mH/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    </body>
+</html>
+
+<!--1:09:41-->
