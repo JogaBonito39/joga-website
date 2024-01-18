@@ -8,15 +8,17 @@
 html{
     scroll-behavior: smooth;
 }
+/***
 body{
     background: #080808;
     color: #fff;
 }
-
+***/
 #header{
     width: 100%;
     height: 100vh;
     background-image: url(images/my_pic.png);
+    background-image: url(layer4.svg);
     background-size: cover;
     background-position: center;
 }
@@ -83,7 +85,9 @@ nav ul li a:hover::after{
 }
 
 .header-two-text span{
-    color: #ff004f;
+    /* color: #ff004f; */
+    /* color: #300806; */
+    color: #8f1610;
     font-size: 60px; 
 }
 /*-----------about-------*/
@@ -102,7 +106,7 @@ nav ul li a:hover::after{
     flex-basis: 35%;
 }
 
-.about-col-1{
+.about-col-1 img{
     width: 100%;
     border-radius: 15px;
 }
@@ -215,7 +219,7 @@ nav ul li a:hover::after{
 
 .work-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, mixmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
