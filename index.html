@@ -7,6 +7,111 @@
         <title>Personal Portfolio Website</title>
         <script src="https://kit.fontawesome.com/e2374f689a.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="style.css">
+        <style>
+        body {
+            margin: 0;
+            font-family: 'prompt', sans-serif;
+            color: white;
+            background: #080808;
+            overflow-x: hidden;
+        }
+
+        section{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 400px;
+            padding: 100px 20vw;
+        }
+
+        .blue {
+            background: #3c31dd;
+        }
+        .red{
+            background: #ff004f;
+        }
+
+        .pink{
+            background: #ff0066;
+        }
+
+        .dark {
+            background: #0f0f10;
+        }
+
+        .curve {
+            position: absolute;
+            height: 225px;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .curve::before {
+            content: '';
+            display: block;
+            position: absolute;
+            border-radius: 100% 50%;
+            width: 55%;
+            height: 100%;
+            background-color: #202731;
+            transform: translate(85%, 60%)
+        }
+
+        .curve::after{
+            content: '';
+            display: block;
+            position: absolute;
+            border-radius: 100% 50%;
+            width: 55%;
+            height: 100%;
+            background-color: #3c31dd;
+            transform: translate(-4%, 40%);
+            z-index: -1;
+        }
+
+        .wave {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+
+        .wave svg {
+            position: relative;
+            display: block;
+            width: calc(136% + 1.3px);
+            height: 393px;
+        }
+
+        .wave .shape-fill {
+            fill: #080808;
+        }
+
+        .spacer {
+            aspect-ratio: 960/600;
+            width: 100%;
+            height: 20%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .layer1 {
+            background-image: url('./layer1.svg')
+        }
+        .layer2 {
+            background-image: url('./layer2.svg')
+        }
+        .layer3 {
+            background-image: url('./layer3.svg')
+        }
+        .layer4 {
+            background-image: url('/layer4.svg')
+        }
+        </style>
     </head>
     <body>
     <div id="header">
@@ -14,6 +119,7 @@
             <nav>
                 <!--get rid from here-->
                 <div class="header-two-text">
+                    <!-- <div class="spacer layer4"></div> -->
                     <h1><span>D</span>'Angelo.</h1>
                 </div>
                 <!--to here-->
@@ -29,7 +135,7 @@
                 <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
-                <p>Rutgers Business School Student</p>
+                <p>Rutgers University Student</p>
                 <h1>Hi, I'm <span>D'Angelo</span></br>Vera</h1>
             </div>
         </div>
@@ -39,7 +145,8 @@
         <div class="container">
             <div class="row">
                <div class="about-col-1">
-                    <img src="images/user.png"> 
+                    <img src="images/my_pic.png"
+                    width = ""/> 
                </div>
                <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
@@ -105,7 +212,8 @@
         <h1 class="sub-title">My Work</h1>
         <div class="work-list">
             <div class="work">
-                <img src="images/work-1.png">
+                <img src="images/work-1.png"
+                height = "620"/>
                 <div class="layer">
                     <h3>Autonomous RC car</h3>
                     <p>description</p>
@@ -113,7 +221,9 @@
                 </div>
             </div>
             <div class="work">
-                <img src="images/work-2.png">
+                <img src="images/work-2.png"
+                width = "300"
+                height = "">
                 <div class="layer">
                     <h3>Western Digital Corp. - Qualitative Analysis Report</h3>
                     <p>description</p>
@@ -121,7 +231,9 @@
                 </div>
             </div>
             <div class="work">
-                <img src="images/work-3.png">
+                <img src="images/work-3.png"
+                height = ""
+                width = "500">
                 <div class="layer">
                     <h3>Southwest Airlines Co. - LUV Equity Research Report</h3>
                     <p>description</p>
@@ -159,10 +271,27 @@
             </div>
         </div>
     </div>
+    <div class="spacer layer3"></div>
     <div class="copyright">
-        <p>Copyright © D'Angelo. Made with <i class="fas fa-heart"></i> by Easy Tutorials</p>
+        <p>Copyright © 2024 D'Angelo. Made with <i class="fas fa-heart"></i> by Easy Tutorials</p>
+        <!-- <p>Copyright © 2024 D'Angelo Portfolio - All Rights Reserved.</p> -->
     </div>
 </div>
+<!-- <section class = "red">
+    <div class="wave">
+        
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+        </svg>
+        <div class="copyright">
+            <p>Copyright © D'Angelo. Made with <i class="fas fa-heart"></i> by Easy Tutorials</p>
+        </div>
+    </div>
+</section> -->
+<!--haikei-->
+<!--curve-->
+<!-- <div class="curve"></div> -->
+<!--curve end-->
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
